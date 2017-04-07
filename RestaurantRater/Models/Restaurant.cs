@@ -6,6 +6,7 @@ using System.Web;
 
 namespace RestaurantRater.Models
 {
+    //Models handles data we want to collect 
     public class Restaurant
     {
         public int RestaurantID { get; set; }
@@ -13,7 +14,6 @@ namespace RestaurantRater.Models
         public string Address { get; set; }
         public int Rating { get; set; }
     }
-
     //creating a sublcass of the DbContext
     //uses Set as a collection type
     public class RestaurantDBContext : DbContext
